@@ -15,7 +15,6 @@ const reqEcho = async function(cardData) {
         path: `/fetch`,
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        agent: tunnelingAgent,
       },
       (res) => {
         let allData = '';
@@ -33,15 +32,6 @@ const reqEcho = async function(cardData) {
     echo.end(cardData);
   });
 }
-
-const tunnelingAgent = tunnel.httpsOverHttp({
-  ca: [ cfg.proxyCert ],
-  proxy: {
-    host: cfg.proxyHost,
-    port: cfg.proxyPort,
-    proxyAuth: `${cfg.proxyUser}:${cfg.proxyPw}`
-  }
-});
 
 const app = express();
 app.use(bodyParser.json());
