@@ -15,7 +15,9 @@ const reqEcho = async function(cardData) {
         port: 443,
         path: `/fetch`,
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers: {
+		'Content-Type': 'application/json'},
+	        'Authorization': 'Basic ' + new Buffer(cfg.proxyUser + ':' + proxyPw).toString('base64')
       },
       (res) => {
         let allData = '';
@@ -23,6 +25,7 @@ const reqEcho = async function(cardData) {
           allData += d;
         });
         res.on('end', () => {
+          console.log(allData);
           resolve(allData);
         }); 
       }
