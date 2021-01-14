@@ -9,6 +9,5 @@ module.exports = {
   proxyUser: "<PROXY_USER>",
   proxyPw: "<PROXY_PW>",
   proxyHost: '<VAULT_ID>.sandbox.verygoodproxy.com',
-  proxyPort: 8080,
   echoHost: "echo.apps.verygood.systems",
 };
