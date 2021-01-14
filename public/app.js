@@ -1,4 +1,4 @@
-const form = VGSCollect.create("tnt72v2ptmv", 'sandbox', function (state) {});
+const form = VGSCollect.create("<VAULT_ID>", 'sandbox', function (state) {});
 
 form.field("#card_number", {
   type: "card-number",
