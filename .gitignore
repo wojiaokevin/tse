@@ -1,5 +1,7 @@
 node_modules/
-keys/*.pem
+keys/csr.pem
+keys/cert.pem
+keys/key.pem
 config.js
 *.swo
 *.swp

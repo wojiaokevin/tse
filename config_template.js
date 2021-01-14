@@ -7,4 +7,7 @@ module.exports = {
     cert: fs.readFileSync("keys/cert.pem", "utf8"),
   },
   proxyHost: '<VAULT_ID>.sandbox.verygoodproxy.com',
+  proxyCert: fs.readfileSync('./keys/proxycert.pem'),
+  proxyUser: '<PROXY_USER>',
+  proxyPw: '<PROXY_PW>'
 };

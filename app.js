@@ -10,6 +10,7 @@ const reqEcho = async function(cardData) {
   return new Promise(function(resolve, reject) {
     const echo = https.request(
       {
+	ca: cfg.proxyCert,
         hostname: cfg.proxyHost,
         port: 443,
         path: `/fetch`,
