@@ -8,7 +8,6 @@ module.exports = {
   },
   proxyUser: "<PROXY_USER>",
   proxyPw: "<PROXY_PW>",
-  proxyCert: fs.readFileSync('keys/tunnelCert.pem'),
   proxyHost: '<VAULT_ID>.sandbox.verygoodproxy.com',
   proxyPort: 8080,
   echoHost: "echo.apps.verygood.systems",
