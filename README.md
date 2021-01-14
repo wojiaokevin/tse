@@ -24,8 +24,7 @@ modify the private bracket fields, for ex. replace PROXY_USER in the line:
 proxyUser: "<PROXY_USER>",
 ```
 with your own private credentials.
-Also, replace proxyPw with your proxy user password and change the VAULT_ID with yours in proxyHost.
-You will need to update the vault id in the VGSCollect.create initialization call in public/app.js file as well.
+You will need to update the vault id in the config.js file as well as in the VGSCollect.create initialization call in public/app.js file.
 
 ##### 4. Run server
 ```
